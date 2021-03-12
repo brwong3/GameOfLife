@@ -10,11 +10,6 @@ int heightScreen = 900;
 
 public void setup () {
   size(1200, 900);
-  for(int i = 0; i < NUM_ROWS; i++) {
-    stroke(20);
-    fill(255);
-    line((widthScreen/NUM_ROWS)*i,0,(widthScreen/NUM_ROWS)*i, 1600);
-  }
   frameRate(6);
   // make the manager
   Interactive.make( this );
@@ -31,6 +26,11 @@ public void setup () {
 
 public void draw () {
   background( 0 );
+  for(int i = 0; i < NUM_ROWS; i++) {
+    stroke(20);
+    fill(255);
+    line((widthScreen/NUM_ROWS)*i,0,(widthScreen/NUM_ROWS)*i, 1600);
+  }
   if (running == false) //pause the program
     return;
   copyFromButtonsToBuffer();
