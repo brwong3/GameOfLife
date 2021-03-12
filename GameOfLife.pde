@@ -5,11 +5,11 @@ public static final int NUM_COLS = 40;
 private Life[][] buttons; //2d array of Life buttons each representing one cell
 private boolean[][] buffer; //2d array of booleans to store state of buttons array
 private boolean running = true; //used to start and stop program
-int widthScreen = 1600;
-int heightScreen = 1200;
+int widthScreen = 1200;
+int heightScreen = 900;
 
 public void setup () {
-  size(1600, 1200);
+  size(1200, 900);
   for(int i = 0; i < NUM_ROWS; i++) {
     stroke(20);
     fill(255);
