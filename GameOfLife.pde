@@ -55,10 +55,10 @@ public void draw () {
 }
 
 public void keyPressed() {
-  if(key == 'r') {
+  if(key == 'r' || key == 'R') {
      running = !running; 
   }
-  if(key == 'e' || key == 'e') {
+  if(key == 'e' || key == 'E') {
     running = !running;
     for(int r = 0; r < NUM_ROWS; r++) {
       for(int c = 0; c < NUM_COLS; c++) {
